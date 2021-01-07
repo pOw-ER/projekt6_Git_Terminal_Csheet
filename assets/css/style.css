@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+body {
+  margin: 0;
+  font-size: 10px;
+  background-color: gold;
+}
+
+header {
+  margin-bottom: 200px;
+  padding-bottom: 100px;
+}
+header div {
+  text-align: center;
+}
+header div a img {
+  width: 30%;
+  height: 400px;
+  padding: 50px 50px;
+}
+header div a:nth-of-type(1) img:hover{
+  width: 31%;
+  height: 410px;
+  text-shadow: 10px 10px #333;
+}
+header div a:nth-of-type(2) img:hover{
+  width: 31%;
+  height: 410px;
+}
+
+header h1 {
+  text-align: center;
+  font-family: 'Monoton', cursive;
+  font-size: 5rem;
+  color: rgb(116, 116, 116);
+}
+
+header div a {
+  display: inline;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+nav {
+  position: fixed;
+  width: 100px;
+  right: 0;
+  top: 100px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+nav ul li {
+  padding: 20px 10px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+section .commands {
+  width: 80%;
+  margin: 50px auto;
+}
+section .commands h2{
+  text-align: center;
+  font-family: 'Monoton', cursive;
+  font-size: 2rem;
+}
+
+section .commands img{
+  width: 100%;
+}
