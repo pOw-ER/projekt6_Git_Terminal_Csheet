@@ -1,75 +1,189 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
 
 body {
-  margin: 0;
+  padding-top: 40px;
+  margin: -110;
   font-size: 10px;
   background-color: gold;
 }
-
+#terminalIcon, #gitIcon {
+  font-size: 20px;
+  position: relative;
+  color: rgb(0, 0, 0);
+}
+#terminalIcon {
+  top:-10px;
+  left: 270px;
+}
+#gitIcon {
+  top:-10px;
+  left: 950px;
+}
 header {
   margin-bottom: 200px;
   padding-bottom: 100px;
 }
 header div {
-  text-align: center;
+  margin-top: 200px;
+  /* text-align: center; */
 }
-header div a img {
-  width: 30%;
-  height: 400px;
-  padding: 50px 50px;
+
+header div a:nth-of-type(1){
+  margin-left: 250px;
 }
-header div a:nth-of-type(1) img:hover{
-  width: 31%;
-  height: 410px;
-  text-shadow: 10px 10px #333;
-}
-header div a:nth-of-type(2) img:hover{
-  width: 31%;
-  height: 410px;
+header div a:nth-of-type(2){
+  margin-left: 300px;
+
 }
 
 header h1 {
   text-align: center;
   font-family: 'Monoton', cursive;
   font-size: 5rem;
-  color: rgb(116, 116, 116);
+  color: black;
+  letter-spacing: 10px;
 }
-
-header div a {
-  display: inline;
-  text-decoration: none;
+main h1 {
   text-align: center;
+  font-family: 'Monoton', cursive;
+  font-size: 5rem;
   color: black;
 }
-nav {
-  position: fixed;
-  width: 100px;
-  right: 0;
-  top: 100px;
+.page-header {
+  margin-top: 100px;
+  letter-spacing: 5px;
 }
-nav ul {
+#page-header-2 {
+  margin: 0;
+  letter-spacing: 5px;
+}
+header div a {
+  text-decoration: none;
+  text-align: center;
+  color: gold;
+  padding: 40px 100px;
+  background: black;
+  border-radius: 50px;
+  font-size: 2rem;
+  transition: all 0.5;
+}
+header div a:hover {
+  background-color: rgb(173, 173, 173);
+  text-decoration: underline;
+}
+hr {
+  margin: 100px 0;
+  border: none;
+  border-bottom: 1px solid rgb(165, 165, 165);
+}
+.topNav {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(158, 157, 157);
+  top: 0;
+  right: 0;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 10px;
+}
+.topNav ul li {
+  display: inline;
+  padding: 0px 30px;
+}
+.topNav ul {
+  padding-left: 150px;
+  text-align: right;
+}
+.topNav ul li a {
+  text-decoration: none;
+  color: gold;
+  font-size: 1.4rem;
+  transition: all 1s;
+}
+
+aside nav {
+  position: fixed;
+  background-color: rgb(165, 165, 165);
+  width: 200px;
+  left: 0;
+  top: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+aside nav ul, .topNav ul {
   list-style: none;
   margin: 0;
 }
-nav ul li {
-  padding: 20px 10px;
-}
-nav ul li a{
-  text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
+aside nav ul {
+  padding: 0;
 }
 
-section .commands {
-  width: 80%;
-  margin: 50px auto;
+aside nav ul li {
+  padding: 10px 10px 10px 0;
+  border-bottom: 1px solid gold;
+  text-align: center;
+  transition: all 1s ease;
 }
+aside nav ul li:hover {
+  background-color:black;
+}
+aside nav ul li a {
+  text-decoration: none;
+  color: gold;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  transition: all 1s;
+}
+aside nav ul li a:hover, .topNav ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+section .commands {
+  width: 60%;
+  margin: 100px auto;
+}
+
 section .commands h2{
+  margin-top: 100px;
   text-align: center;
   font-family: 'Monoton', cursive;
   font-size: 2rem;
+  letter-spacing: 5px;
 }
 
 section .commands img{
   width: 100%;
+  transition: all .8s ease;
+}
+section .commands img:hover {
+  box-shadow: 20px 20px 30px 10px rgb(204, 173, 0);
+  width: 105%;
+}
+
+.nach-oben {
+  position: fixed;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  bottom: 30px;
+  right: 20px;
+}
+
+.nach-oben a {
+  text-decoration: none;
+  color: gold;
+  background-color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  font-size: .9rem;
+  transition: all .6s;
+}
+.nach-oben a:hover {
+  color: white;
+  background-color: gold;
+  font-size: 1.5rem;
+  padding: 15px 25px;
 }
